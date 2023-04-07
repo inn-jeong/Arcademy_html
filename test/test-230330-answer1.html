@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table{
+                width: 550px;
+                height: 450px;
+            }
+            td{
+                padding-left:15px;
+            }
+
+            /*  */
+            .td1 a{
+                padding: 5px;
+            }
+            /* tr태그의 홀수번째 td스타일 적용 */
+            tr:nth-child(odd)td{
+                padding: 20px 300px 20px 10px;
+            }
+            /* 2번째 tr의 첫번째 td */
+            tr:nth-child(2) td:first-child{
+                width: 20px;
+                height: 300px;
+                padding: 0 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <td colspan="2" class="td1">
+                        <a href="#">공지사항</a>
+                        <a>|</a>
+                        <a href="#">게시판</a>
+                        <a>|</a>
+                        <a href="#">FaQ</a>
+                        <a>|</a>
+                        <a href="#">QnA</a>
+                </td>
+            </tr>
+            <tr>
+                <td id="td2">
+                    <a href="#">Java</a><br>
+                    <a href="#">JSP</a><br>
+                    <a href="#">Oracle</a><br>
+                    <a href="#">HTML</a><br>
+                    <a href="#">CSS</a><br>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Since 2021
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
