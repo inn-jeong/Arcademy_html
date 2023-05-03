@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table{
+                width: 700px;
+                height: 600px;
+            }
+            .td1{
+                padding-left: 80px;
+            }
+            .td1 a{
+                padding: 5px;
+            }
+            tr:nth-child(2) td:first-child{
+                width: 80px;
+                height: 400px;
+                padding: 0 ;
+            }
+        </style>
+        <script>
+            function strprint(str){
+                var tr2 = document.getElementById('tr2');//id를 통해 2행2열 요소를 받음
+                tr2.innerText=str;//해당 요소에 매개변수 str을 입력
+            }
+        </script>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <td colspan="2" class="td1">
+                        <a href="#" onclick="strprint('공지사항입니다.');">공지사항</a>
+                        <a>|</a>
+                        <a href="#" onclick="strprint('게시판입니다.');">게시판</a>
+                        <a>|</a>
+                        <a href="#" onclick="strprint('FaQ입니다.');">FaQ</a>
+                        <a>|</a>
+                        <a href="#" onclick="strprint('QnA입니다.');">QnA</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">Java</a><br>
+                    <a href="#">JSP</a><br>
+                    <a href="#">Oracle</a><br>
+                    <a href="#">HTML</a><br>
+                    <a href="#">CSS</a><br>
+                </td>
+                <td id="tr2">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Since 2021
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
